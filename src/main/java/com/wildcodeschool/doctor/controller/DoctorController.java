@@ -18,7 +18,7 @@ public class DoctorController {
         if(number == 13){
             return new Doctor (13, "Jodie Whittaker");
         }
-        if(number>1 && number<13){
+        if(number>0 && number<13){
             throw new ResponseStatusException(HttpStatus.SEE_OTHER);
         }
         if(number == 42){
